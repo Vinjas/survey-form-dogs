@@ -21,6 +21,7 @@
                 id="name" 
                 name="name" 
                 type="text"
+                class="form-control"
                 placeholder="Enter your Dog's name"
                 required
                 />
@@ -31,6 +32,7 @@
                 id="email" 
                 name="email" 
                 type="email"
+                class="form-control"
                 placeholder="Enter your Email"
                 required
                 />
@@ -41,6 +43,7 @@
                 id="number" 
                 name="number" 
                 type="number"
+                class="form-control"
                 placeholder="Age in numbers"
                 min="0"
                 max="99"
@@ -48,7 +51,7 @@
             </div>            
             <div class="form-group">
                 <label for="get-dog">How did you get your dog?</label>
-                <select id="dropdown">
+                <select id="dropdown" class="form-control">
                     <option value="buy">I bought my dog from a Pet Shop</option>
                     <option value="adopt">I adopted my dog from an animal shelter</option>
                     <option value="present">It was a present</option>
@@ -61,35 +64,41 @@
                     <input 
                     type="radio"
                     id="definitely" name="another-dog" value="definitely"
+                    class="input-radio"
                     checked
                     />
-                    <label for="definitely">Definitely</label>
+                    <label class="input-radio" for="definitely">Definitely</label>
                 </div>
                 <div>
                     <input 
                     type="radio"
                     id="maybe" name="another-dog" value="maybe"
+                    class="input-radio"
                     />
-                    <label for="maybe">Maybe</label>
+                    <label class="input-radio" for="maybe">Maybe</label>
                 </div>
                 <div>
                     <input 
                     type="radio"
                     id="no" name="another-dog" value="no"
+                    class="input-radio"
                     />
-                    <label for="no">No</label>
+                    <label class="input-radio" for="no">No</label>
                 </div>                
             </div>
             <div class="form-group">
                 <label for="checkbox">What are your dog's best traits?</label>
-                <input type="checkbox" id="cbox1" name="checkbox" value="fur-and-colors">
-                <label for="cbox1">The fur and colors</label>
-                <input type="checkbox" id="cbox2" name="checkbox" value="way-of-barking">
-                <label for="cbox1">The way he/she barks</label>
-                <input type="checkbox" id="cbox3" name="checkbox" value="how-much-my-dog-sleeps">
-                <label for="cbox1">How much my dog sleeps</label>
-                <input type="checkbox" id="cbox4" name="checkbox" value="loyalty-and-company">
-                <label for="cbox1">The loyalty and great company</label>
+                <input class="input-checkbox" type="checkbox" id="cbox1" name="checkbox" value="fur-and-colors">
+                <label class="input-checkbox" for="cbox1">The fur and colors</label>
+                <br>
+                <input class="input-checkbox" type="checkbox" id="cbox2" name="checkbox" value="way-of-barking">
+                <label class="input-checkbox" for="cbox1">The way he/she barks</label>
+                <br>
+                <input class="input-checkbox" type="checkbox" id="cbox3" name="checkbox" value="how-much-my-dog-sleeps">
+                <label class="input-checkbox" for="cbox1">How much my dog sleeps</label>
+                <br>
+                <input class="input-checkbox" type="checkbox" id="cbox4" name="checkbox" value="loyalty-and-company">
+                <label class="input-checkbox" ="cbox1">The loyalty and great company</label>
             </div>
             <div class="form-group">
                 <label for="textarea">Any comments about your dog?</label>
