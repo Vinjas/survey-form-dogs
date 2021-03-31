@@ -16,26 +16,91 @@
 
         <form id="survey-form">
             <div class="form-group">
-                <label for="name">Name of your Dog</label>
+                <label id="name-label" for="name">Name of your Dog</label>
                 <input 
                 id="name" 
                 name="name" 
                 type="text"
                 placeholder="Enter your Dog's name"
+                required
                 />
             </div>
-            <div class="form-group"></div>
-                <label for="email">Email</label>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
                 <input 
                 id="email" 
                 name="email" 
-                type="text"
+                type="email"
                 placeholder="Enter your Email"
+                required
                 />
             </div>
-            
-
-
+            <div class="form-group">
+                <label id="number-label" for="number">Age of your dog (optional)</label>
+                <input 
+                id="number" 
+                name="number" 
+                type="number"
+                placeholder="Age in numbers"
+                min="0"
+                max="99"
+                />
+            </div>            
+            <div class="form-group">
+                <label for="get-dog">How did you get your dog?</label>
+                <select id="dropdown">
+                    <option value="buy">I bought my dog from a Pet Shop</option>
+                    <option value="adopt">I adopted my dog from an animal shelter</option>
+                    <option value="present">It was a present</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Would you get another dog if you had the chance?</label>
+                <div>
+                    <input 
+                    type="radio"
+                    id="definitely" name="another-dog" value="definitely"
+                    checked
+                    />
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div>
+                    <input 
+                    type="radio"
+                    id="maybe" name="another-dog" value="maybe"
+                    />
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input 
+                    type="radio"
+                    id="no" name="another-dog" value="no"
+                    />
+                    <label for="no">No</label>
+                </div>                
+            </div>
+            <div class="form-group">
+                <label for="checkbox">What are your dog's best traits?</label>
+                <input type="checkbox" id="cbox1" name="checkbox" value="fur-and-colors">
+                <label for="cbox1">The fur and colors</label>
+                <input type="checkbox" id="cbox2" name="checkbox" value="way-of-barking">
+                <label for="cbox1">The way he/she barks</label>
+                <input type="checkbox" id="cbox3" name="checkbox" value="how-much-my-dog-sleeps">
+                <label for="cbox1">How much my dog sleeps</label>
+                <input type="checkbox" id="cbox4" name="checkbox" value="loyalty-and-company">
+                <label for="cbox1">The loyalty and great company</label>
+            </div>
+            <div class="form-group">
+                <label for="textarea">Any comments about your dog?</label>
+                <textarea 
+                id="textarea" 
+                name="textarea">
+                </textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
         </form> 
     </div>
 </body>
